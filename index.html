@@ -14,46 +14,46 @@
         * {
             box-sizing: border-box;
         }
-        
+
         .slider {
             width: 100%;
             margin: 100px auto;
         }
-        
+
         .slick-slide {
             margin: 0px 20px;
         }
-        
+
         #section- {
             padding-top: 40px;
         }
-        
+
         .slick-slide img {
             width: 100%;
         }
-        
+
         .slick-center .slide-h3 {
             color: #FFF;
         }
-        
+
         .slider-two {
             width: 100%;
             margin: 100px auto;
         }
-        
+
         .slide-h3 {
             /* margin: 10% 0 10% 0;
             padding: 40% 20%; */
             /* background: red; */
         }
-        
+
         .slider div {
             margin-right: 5px;
         }
         /* .slick-slide {
             opacity: .6;
         } */
-        
+
         .slick-center {
             display: block;
             max-width: 10% !important;
@@ -64,11 +64,11 @@
             transition: all ease-in-out .3s;
             opacity: .2;
         }
-        
+
         .slick-active {
             opacity: .5;
         }
-        
+
         .slick-current {
             opacity: 1;
         } */
@@ -394,59 +394,69 @@
     <script src="./slick/style.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js" integrity="sha256-Fw/o8ZlEaGD4fqJz/yeVp5RBuuK3d9IlXr0XF4IN9GU=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $(document).on("ready", function() {
-            $(function() {
-                var scroll = new SmoothScroll('a[href*="#section-"]')
-            })
+    $(document).on("ready", function() {
+  $(function() {
+    var scroll = new SmoothScroll('a[href*="#section-"]')
+  })
 
-            $(".vertical-center-4").slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                centerMode: true,
-                cssEase: true,
-                mobileFirst: true,
-                responsive: true,
-                useCSS: false,
-                useTransform: false,
-                waitForAnimate: false
-            })
+  $(".vertical-center-4").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    cssEase: true,
+    mobileFirst: true,
+    responsive: true,
+    useCSS: false,
+    useTransform: false,
+    waitForAnimate: false
+  })
 
-            $(".onsmall").slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000
-            })
+  $(".onsmall").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
+  })
 
-            $('.slider-two').slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                speed: 1000,
-                autoplay: true,
+  $(".slider-two").slick({
+    centerMode: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 1000,
+    autoplay: true,
 
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                }, {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }]
-            });
-        })
-    </script>
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
+})
+</script>
+
+ <script>
+ window.intercomSettings = {
+  app_id: "th7g6vvs"
+}
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/th7g6vvs';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
 </body>
-
 </html>
